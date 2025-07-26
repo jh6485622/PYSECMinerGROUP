@@ -9,8 +9,8 @@ from Crypto.Util.Padding import pad, unpad
 import base64
 import os
 
-ACCOUNT_LOG = "account.log"
-AES_KEY = b'8888NOHTYP666cba28331GNAUHYNNHOJ'
+ACCOUNT_LOG = "account.log" # need to already have one when use
+AES_KEY = b'################################' # 16, 24, or 32 bytes long
 
 def encrypt_amount(amount):
     cipher = AES.new(AES_KEY, AES.MODE_ECB)
